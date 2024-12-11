@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA Food Explorer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="project2-2.css">
 </head>
 <body>
@@ -18,35 +19,65 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Welcome to the Best guide for Food in LA!</h2>
             <p>Discover the best dining spots in Los Angeles, from hidden gems to popular favorites.</p>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="pexels-cristian-rojas-8448106 (1).jpg" alt="Delicious Tacos">
-                    <h3>Taco Haven</h3>
-                    <p>Enjoy mouthwatering street tacos with authentic flavors.</p>
+            <div class="accordion" id="foodAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Best Tacos in LA
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#foodAccordion">
+                        <div class="accordion-body">
+                            Discover the best taco spots in Los Angeles with vibrant street food and local favorites.
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="pexels-cottonbro-3297878.jpg" alt="Fresh Sushi">
-                    <h3>Sushi Bliss</h3>
-                    <p>Experience the freshest sushi prepared by skilled chefs.</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Top Sushi Spots in LA
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#foodAccordion">
+                        <div class="accordion-body">
+                            Explore the top sushi restaurants in LA, known for their fresh and delicious rolls.
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="pexels-melaudelo-26936532.jpg" alt="Juicy Burger">
-                    <h3>Burger Spot</h3>
-                    <p>Sink your teeth into the juiciest burgers in LA.</p>
+            </div>
+            <div class="card-group mt-4">
+                <div class="card">
+                    <img src="pexels-cristian-rojas-8448106 (1).jpg" class="card-img-top" alt="Delicious Tacos">
+                    <div class="card-body">
+                        <h5 class="card-title">Taco Haven</h5>
+                        <p class="card-text">Enjoy mouthwatering street tacos with authentic flavors.</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="pexels-salo-salo-562315-29621606.jpg" alt="Heavenly Dessert">
-                    <h3>Dessert Dreams</h3>
-                    <p>Indulge in sweet treats that will satisfy your cravings.</p>
+                <div class="card">
+                    <img src="pexels-cottonbro-3297878.jpg" class="card-img-top" alt="Fresh Sushi">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi Bliss</h5>
+                        <p class="card-text">Experience the freshest sushi prepared by skilled chefs.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pexels-melaudelo-26936532.jpg" class="card-img-top" alt="Juicy Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger Spot</h5>
+                        <p class="card-text">Sink your teeth into the juiciest burgers in LA.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
